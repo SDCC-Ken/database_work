@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>College Management System</title>
+</head>
+<style type="text/css">
+#subMenu2 {display: none;}
+#subMenu2.showSubMenu2 {display: block;}
+#subMenu3 {display: none;}
+#subMenu3.showSubMenu3 {display: block;}
+#subMenu4 {display: none;}
+#subMenu4.showSubMenu4 {display: block;}
+#subMenu5 {display: none;}
+#subMenu5.showSubMenu5 {display: block;}
+</style>
+<script language="javascript">
+function toggleMenu2() {
+	var subMenu2 = document.getElementById("subMenu2");
+	subMenu2.classList.toggle("showSubMenu2");
+}
+function toggleMenu3() {
+	var subMenu3 = document.getElementById("subMenu3");
+	subMenu3.classList.toggle("showSubMenu3");
+}
+function toggleMenu4() {
+	var subMenu4 = document.getElementById("subMenu4");
+	subMenu4.classList.toggle("showSubMenu4");
+}
+function toggleMenu5() {
+	var subMenu5 = document.getElementById("subMenu5");
+	subMenu5.classList.toggle("showSubMenu5");
+}
+</script>
+<body>
+<font size="2">
+<div id="menu" onclick="toggleMenu2()"><a><p align="center"><font color="#0000FF"><u>Booking</u></font></p></a>
+<div id="subMenu2">
+	<div class="subMenuItem2"><a href="lecturer_new_booking.php" target="_parent">New Booking</a></div>
+	<div class="subMenuItem2"><a href="lecturer_booking.php" target="_parent">Modifiy/ Delete Booking</a></div>
+    <div class="subMenuItem2"><a href="lecturer_room_information.php" target="_parent">Query 1-Room Information</a></div>
+</div></div>
+<div id="menu" onclick="toggleMenu3()"><a><p align="center"><font color="#0000FF"><u>Lesson</u></font></p></a>
+<div id="subMenu3">
+	<div class="subMenuItem3"><a href="lecturer_set_lesson_grade.php" target="_parent">Add Grade to Student</a></div>
+    <div class="subMenuItem3"><a href="lecturer_lesson_check_1.php" target="_parent">Query 2-Lesson Information with Division</a></div>
+	<div class="subMenuItem3"><a href="lecturer_lesson_check_2.php" target="_parent">Query 3-Lesson Information with Categories</a></div>
+	<div class="subMenuItem3"><a href="lecturer_lesson_check_3.php" target="_parent">Query 4-Lesson Information with Medium</a></div>
+    <div class="subMenuItem3"><a href="lecturer_show_lesson.php" target="_parent">Query 5-Lesson information</a></div>
+</div></div>
+<div id="menu" onclick="toggleMenu4()"><a><p align="center"><font color="#0000FF"><u>Report</u></font></p></a>
+<div id="subMenu4">
+	<div class="subMenuItem4"><a href="lecturerreport_1.php" target="_parent">Report 1 - frequency of using room</a></div>
+    <div class="subMenuItem4"><a href="lecturerreport_2.php" target="_parent">Report 2 - highest frequency of room</a></div>
+    <div class="subMenuItem4"><a href="lecturerreport_3.php" target="_parent">Report 3 - frequency of using room each day</a></div>
+    <div class="subMenuItem4"><a href="lecturerreport_4.php" target="_parent">Report 4 - number of lesson of each lesson division</a></div>
+    <div class="subMenuItem4"><a href="lecturerreport_5.php" target="_parent">Report 5 - number of lesson of each lesson categories</a></div>
+    <div class="subMenuItem4"><a href="lecturerreport_6.php" target="_parent">Report 6 - number of lesson of each lesson medium</a></div>
+</div></div>
+<p align="center"><a href="database_logout.php" target="_parent">Logout</a></p>
+</font>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>

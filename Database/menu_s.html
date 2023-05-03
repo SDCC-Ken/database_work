@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>College Management System</title>
+</head>
+<style type="text/css">
+#subMenu2 {display: none;}
+#subMenu2.showSubMenu2 {display: block;}
+#subMenu3 {display: none;}
+#subMenu3.showSubMenu3 {display: block;}
+#subMenu4 {display: none;}
+#subMenu4.showSubMenu4 {display: block;}
+</style>
+<script language="javascript">
+function toggleMenu2() {
+	var subMenu2 = document.getElementById("subMenu2");
+	subMenu2.classList.toggle("showSubMenu2");
+}
+function toggleMenu3() {
+	var subMenu3 = document.getElementById("subMenu3");
+	subMenu3.classList.toggle("showSubMenu3");
+}
+function toggleMenu4() {
+	var subMenu4 = document.getElementById("subMenu4");
+	subMenu4.classList.toggle("showSubMenu4");
+}
+</script>
+<body>
+<font size="2">
+<div id="menu" onclick="toggleMenu2()"><a><p align="center"><font color="#0000FF"><u>Lesson</u></font></p></a>
+<div id="subMenu2">
+<div class="subMenuItem2"><a href="student_new_enroll_lesson.php" target="_parent">New Enroll lesson</a></div>
+<div class="subMenuItem2"><a href="student_Check_enroll_lesson_and_grade.php" target="_parent">Query 1-Check enroll lesson and grade</a></div>
+<div class="subMenuItem2"><a href="student_Get_Lesson_time.php" target="_parent">Query 2-Lesson Time</a></div>
+<div class="subMenuItem2"><a href="student_Get_Lecturers_information.php" target="_parent">Query 3-Get Lecturer's information</a></div>
+<div class="subMenuItem2"><a href="student_Check_lesson_information.php" target="_parent">Query 4-Check lesson information</a></div>
+<div class="subMenuItem2"><a href="student_Lesson_level_taken.php" target="_parent">Query 5-Check number of lesson taken order by level</a></div>
+<div class="subMenuItem2"><a href="student_check_lesson_who_taught.php" target="_parent">Query 6-Check lesson who taught</a>
+</div>
+</div></div>
+
+<div id="menu" onclick="toggleMenu3()"><a><p align="center"><font color="#0000FF"><u>Club</u></font></p></a>
+<div id="subMenu3">
+	<div class="subMenuItem3"><a href="student_Check_my_record.php" target="_parent">Query 7-Check my record</a></div>
+    <div class="subMenuItem3"><a href="student_Club_Activities.php" target="_parent">Query 8-Club Activities</a></div>
+</div></div>
+
+<div id="menu" onclick="toggleMenu4()"><a><p align="center"><font color="#0000FF"><u>Report</u></font></p></a>
+<div id="subMenu4">
+<div class="subMenuItem4"><a href="student_Report1.php" target="_parent">Report 1 - Student's club information</a></div>
+<div class="subMenuItem4"><a href="student_Report2.php" target="_parent">Report 2 - Student's lesson information</a></div>
+</div></div>
+<p align="center"><a href="database_logout.php" target="_parent">Logout</a></p>
+</font>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>

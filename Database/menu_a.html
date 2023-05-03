@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>College Management System</title>
+</head>
+<style type="text/css">
+#subMenu2 {display: none;}
+#subMenu2.showSubMenu2 {display: block;}
+#subMenu3 {display: none;}
+#subMenu3.showSubMenu3 {display: block;}
+#subMenu4 {display: none;}
+#subMenu4.showSubMenu4 {display: block;}
+#subMenu5 {display: none;}
+#subMenu5.showSubMenu5 {display: block;}
+#subMenu6 {display: none;}
+#subMenu6.showSubMenu6 {display: block;}
+#subMenu7 {display: none;}
+#subMenu7.showSubMenu7 {display: block;}
+#subMenu8 {display: none;}
+#subMenu8.showSubMenu8 {display: block;}
+</style>
+<script language="javascript">
+function toggleMenu2() {
+	var subMenu2 = document.getElementById("subMenu2");
+	subMenu2.classList.toggle("showSubMenu2");
+}
+function toggleMenu3() {
+	var subMenu3 = document.getElementById("subMenu3");
+	subMenu3.classList.toggle("showSubMenu3");
+}
+function toggleMenu4() {
+	var subMenu4 = document.getElementById("subMenu4");
+	subMenu4.classList.toggle("showSubMenu4");
+}
+function toggleMenu5() {
+	var subMenu5 = document.getElementById("subMenu5");
+	subMenu5.classList.toggle("showSubMenu5");
+}
+function toggleMenu6() {
+	var subMenu6 = document.getElementById("subMenu6");
+	subMenu6.classList.toggle("showSubMenu6");
+}
+function toggleMenu7() {
+	var subMenu7 = document.getElementById("subMenu7");
+	subMenu7.classList.toggle("showSubMenu7");
+}
+function toggleMenu8() {
+	var subMenu8 = document.getElementById("subMenu8");
+	subMenu8.classList.toggle("showSubMenu8");
+}
+</script>
+<body>
+<font size="2">
+<div id="menu" onclick="toggleMenu2()"><a><p align="center"><font color="#0000FF"><u>Student</u></font></p></a>
+<div id="subMenu2">
+<div class="subMenuItem2"><a href="school_admin_new_student.php" target="_parent">New Student</a></div>
+<div class="subMenuItem2"><a href="school_admin_show_student.php" target="_parent">Modifiy / Delete Student</a></div>
+<div class="subMenuItem2"><a href="school_admin_check_student_who_taught.php" target="_parent">Query 1 - Lecturer's students</a></div>
+<div class="subMenuItem2"><a href="school_admin_check_student_join_club.php" target="_parent">Query 2 - Student club's Information</a></div>
+</div></div>
+<div id="menu" onclick="toggleMenu3()"><a><p align="center"><font color="#0000FF"><u>Lecturer</u></font></p></a>
+<div id="subMenu3">
+	<div class="subMenuItem3"><a href="school_admin_new_lecturer.php" target="_parent">New Lecturer</a></div>
+    <div class="subMenuItem3"><a href="school_admin_show_lecturer.php" target="_parent">Modifiy / Delete Lecturer</a></div>
+    <div class="subMenuItem3"><a href="school_admin_check_same_position.php" target="_parent">Query 3 - Check lecturer's infor with same position</a></div>
+</div></div>
+<div id="menu" onclick="toggleMenu4()"><a><p align="center"><font color="#0000FF"><u>Lesson</u></font></p></a>
+<div id="subMenu4">
+<div class="subMenuItem4"><a href="school_admin_new_lesson.php" target="_parent">New Lesson</a></div>
+<div class="subMenuItem4"><a href="school_admin_show_lesson.php" target="_parent">Modifiy / Delete Lesson</a></div>
+</div></div>
+<div id="menu" onclick="toggleMenu5()"><a><p align="center"><font color="#0000FF"><u>Lesson Enroll</u></font></p></a>
+<div id="subMenu5">
+	<div class="subMenuItem5"><a href="school_admin_new_enroll_lesson.php" target="_parent">New lesson Enroll</a></div>
+    <div class="subMenuItem5"><a href="school_admin_show_enroll_lesson.php" target="_parent">Delete lesson Enroll</a></div>
+</div></div>
+<div id="menu" onclick="toggleMenu6()"><a><p align="center"><font color="#0000FF"><u>Club</u></font></p></a>
+<div id="subMenu6">
+	<div class="subMenuItem6"><a href="school_admin_new_club.php" target="_parent">New Club</a></div>
+    <div class="subMenuItem6"><a href="school_admin_show_club.php" target="_parent">Delete Club</a></div>
+</div></div>
+<div id="menu" onclick="toggleMenu7()"><a><p align="center"><font color="#0000FF"><u>Room</u></font></p></a>
+<div id="subMenu7">
+	<div class="subMenuItem7"><a href="school_admin_new_room.php" target="_parent">New Room</a></div>
+    <div class="subMenuItem7"><a href="school_admin_show_room.php" target="_parent">Delete Room</a></div>
+</div></div>
+<div id="menu" onclick="toggleMenu8()"><a><p align="center"><font color="#0000FF"><u>Report</u></font></p></a>
+<div id="subMenu8">
+	<div class="subMenuItem8"><a href="schooladminreport_1.php" target="_parent">Report 1 - number of lesson lecturer teach</a></div>
+    <div class="subMenuItem8"><a href="schooladminreport_2.php" target="_parent">Report 2 - number of each lesson</a></div>
+    <div class="subMenuItem8"><a href="schooladminreport_3.php" target="_parent">Report 3 - number of room lecturer booked</a></div>
+    <div class="subMenuItem8"><a href="schooladminreport_4.php" target="_parent">Report 4 - number of room club booked</a></div>
+</div></div>
+<p align="center"><a href="database_logout.php" target="_parent">Logout</a></p>
+</font>
+</body>
+</html>
